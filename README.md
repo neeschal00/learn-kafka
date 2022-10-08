@@ -12,3 +12,7 @@ setting up kafka in docker
 > KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://neeschal00:9092 -e KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1 -d confluentinc/cp-kafka 
 ** kafka requires zookeeper instance **
 ** -e for environment variables to run kafka using configs **
+
+- for the above case the listeners is only 1 so is mentioned in the cli 
+- kafka supports ssl and plain text protocol
+- kafka by default spins up 3 instance so have offsets topic replication in env
