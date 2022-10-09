@@ -23,8 +23,8 @@ async function run() {
         //dupication raises exception
         await admin.createTopics({
             "topics": [{
-                "topic": "Hell",
-                "numPartitions": 1
+                "topic": "Users2",
+                "numPartitions": 2
             }]
         });
         console.log("Created successfully");
