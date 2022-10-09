@@ -5,6 +5,7 @@ tuts in kafka
 ## Docker cmd:
 setting up docker in zookeeper
 > docker run --name zookeeper  -p 2181:2181 -d zookeeper
+
 **exposing port outside**
 
 setting up kafka in docker
@@ -15,7 +16,7 @@ setting up kafka in docker
 **kafka requires zookeeper instance**
 **-e for environment variables to run kafka using configs**
 
-> Note: if using codespace use the active port url domain for hostname n port
+> Note: if using codespace or any device use local ip in config hostname else use the active port url domain for hostname n port
 - for the above case the listeners is only 1 so is mentioned in the cli 
 - kafka supports ssl and plain text protocol
 - kafka by default spins up 3 instance so have offsets topic replication in env
