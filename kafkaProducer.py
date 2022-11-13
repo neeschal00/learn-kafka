@@ -1,5 +1,5 @@
 import tweepy
-from kafka import KafkaProducer
+from kafka.producer import KafkaProducer
 import logging
 
 """API ACCESS KEYS"""
@@ -9,7 +9,7 @@ consumerSecret = "qNl4yNYlh1e6M964e9Ve23rKVbwWnRaZWaKsvGFJM6xqiiPyKi"
 accessToken = "1583496220525309952-tjdvzt4zzWMVdL6vSrBBbojjDPLBLG"
 accessTokenSecret = "wQNYIjOHEQJL6NE87h1fWmTmYuMn66mXwF70YDBTCFzln"
 
-producer = KafkaProducer(bootstrap_servers='localhost:9092')
+producer = KafkaProducer(bootstrap_servers='172.17.0.1:9092')
 search_term = 'Bitcoin'
 topic_name = 'twitter'
 
